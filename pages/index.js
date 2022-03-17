@@ -36,9 +36,49 @@ export default function Home() {
             <Card
               hoverable
               style={{ width: 240 }}
-              cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+              cover={<img alt="example" src="https://www.randomkittengenerator.com/cats/rotator.php" />}
             >
-            <Meta title="Europe Street beat" description="www.instagram.com" />
+            <Meta title="Sleeping Cat" description="www.instagram.com" />
+            </Card>
+          </div>
+
+          <div className={styles.grid}>
+            <Card
+              hoverable
+              style={{ width: 240 }}
+              cover={<img alt="example" src="https://www.kittenwar.com/c_images/2011/10/29/205258.2.jpg" />}
+            >
+            <Meta title="Fighting Cat" description="... Where is my fish?" />
+            </Card>
+          </div>
+
+          <div className={styles.grid}>
+            <Card
+              hoverable
+              style={{ width: 240 }}
+              cover={<img alt="example" src="https://www.randomkittengenerator.com/cats/rotator.php" />}
+            >
+            <Meta title="Spring Cat" description="Spring Semester at PSU" />
+            </Card>
+          </div>
+
+          <div className={styles.grid}>
+            <Card
+              hoverable
+              style={{ width: 240 }}
+              cover={<img alt="example" src="https://www.kittenwar.com/c_images/2017/07/12/221418.4.jpg" />}
+            >
+            <Meta title="Staring Cat" description="www.instagram.com" />
+            </Card>
+          </div>
+
+          <div className={styles.grid}>
+            <Card
+              hoverable
+              style={{ width: 240 }}
+              cover={<img alt="example" src="https://www.kittenwar.com/c_images/2005/08/14/28320.jpg" />}
+            >
+            <Meta title="Sleepy Cat" description="www.instagram.com" />
             </Card>
           </div>
 
@@ -56,9 +96,9 @@ export default function Home() {
             <Card
               hoverable
               style={{ width: 240 }}
-              cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+              cover={<img alt="example" src="https://www.kittenwar.com/c_images/2010/12/17/196925.1.jpg" />}
             >
-            <Meta title="Europe Street beat" description="www.instagram.com" />
+            <Meta title="What" description="www.instagram.com" />
             </Card>
           </div>
 
@@ -66,49 +106,9 @@ export default function Home() {
             <Card
               hoverable
               style={{ width: 240 }}
-              cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+              cover={<img alt="example" src="https://ih1.redbubble.net/image.2482844591.2502/st,small,507x507-pad,600x600,f8f8f8.u1.jpg" />}
             >
-            <Meta title="Europe Street beat" description="www.instagram.com" />
-            </Card>
-          </div>
-
-          <div className={styles.grid}>
-            <Card
-              hoverable
-              style={{ width: 240 }}
-              cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
-            >
-            <Meta title="Europe Street beat" description="www.instagram.com" />
-            </Card>
-          </div>
-
-          <div className={styles.grid}>
-            <Card
-              hoverable
-              style={{ width: 240 }}
-              cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
-            >
-            <Meta title="Europe Street beat" description="www.instagram.com" />
-            </Card>
-          </div>
-
-          <div className={styles.grid}>
-            <Card
-              hoverable
-              style={{ width: 240 }}
-              cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
-            >
-            <Meta title="Europe Street beat" description="www.instagram.com" />
-            </Card>
-          </div>
-
-          <div className={styles.grid}>
-            <Card
-              hoverable
-              style={{ width: 240 }}
-              cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
-            >
-            <Meta title="Europe Street beat" description="www.instagram.com" />
+            <Meta title="Beluga Cat" description="www.instagram.com" />
             </Card>
           </div>
         
