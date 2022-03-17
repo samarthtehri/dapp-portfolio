@@ -1,6 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import { Button, Card, Breadcrumb } from 'antd';
+import 'antd/dist/antd.css';
+
+// Declaring functions
+const {Meta} = Card;
 
 export default function Home() {
   return (
@@ -19,37 +24,94 @@ export default function Home() {
         <p className={styles.description}>
           A decentralized portfolio sharing platform created by Blockchain@PSU organisation 
           <br></br>
-          <button><a href="google.com">Apply Now!</a></button>
+          Check out some of the portfolios down below! all stored on a decentralized blockchain!
+          <br></br>
+          
         </p>
 
+        <Button type="primary"><a href="https://www.google.com">Apply Now!</a></Button>
+        
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+          <div className={styles.grid}>
+            <Card
+              hoverable
+              style={{ width: 240 }}
+              cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+            >
+            <Meta title="Europe Street beat" description="www.instagram.com" />
+            </Card>
+          </div>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+          <div className={styles.grid}>
+            <Card
+              hoverable
+              style={{ width: 240 }}
+              cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+            >
+            <Meta title="Europe Street beat" description="www.instagram.com" />
+            </Card>
+          </div>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+          <div className={styles.grid}>
+            <Card
+              hoverable
+              style={{ width: 240 }}
+              cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+            >
+            <Meta title="Europe Street beat" description="www.instagram.com" />
+            </Card>
+          </div>
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+          <div className={styles.grid}>
+            <Card
+              hoverable
+              style={{ width: 240 }}
+              cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+            >
+            <Meta title="Europe Street beat" description="www.instagram.com" />
+            </Card>
+          </div>
+
+          <div className={styles.grid}>
+            <Card
+              hoverable
+              style={{ width: 240 }}
+              cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+            >
+            <Meta title="Europe Street beat" description="www.instagram.com" />
+            </Card>
+          </div>
+
+          <div className={styles.grid}>
+            <Card
+              hoverable
+              style={{ width: 240 }}
+              cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+            >
+            <Meta title="Europe Street beat" description="www.instagram.com" />
+            </Card>
+          </div>
+
+          <div className={styles.grid}>
+            <Card
+              hoverable
+              style={{ width: 240 }}
+              cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+            >
+            <Meta title="Europe Street beat" description="www.instagram.com" />
+            </Card>
+          </div>
+
+          <div className={styles.grid}>
+            <Card
+              hoverable
+              style={{ width: 240 }}
+              cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+            >
+            <Meta title="Europe Street beat" description="www.instagram.com" />
+            </Card>
+          </div>
+        
         </div>
       </main>
 
@@ -68,3 +130,33 @@ export default function Home() {
     </div>
   )
 }
+
+/*
+        <p className={styles.description}>
+          A decentralized portfolio sharing platform created by Blockchain@PSU organisation 
+          <br></br>
+          <Button type="primary"><a href="https://www.google.com">Apply Now!</a></Button>
+        </p>
+
+
+        <a href="" className={styles.card}>
+            <h2>Documentation &rarr;</h2>
+            <p>Find in-depth information about Next.js features and API.</p>
+          </a>
+        <a href="" className={styles.card}>
+            <h2>Learn &rarr;</h2>
+            <p>Learn about Next.js in an interactive course with quizzes!</p>
+          </a>
+
+          <a href="" className={styles.card}>
+            <h2>Examples &rarr;</h2>
+            <p>Discover and deploy boilerplate example Next.js projects.</p>
+          </a>
+
+          <a href="" className={styles.card}>
+            <h2>Deploy &rarr;</h2>
+            <p>
+              Instantly deploy your Next.js site to a public URL with Vercel.
+            </p>
+          </a>
+*/
