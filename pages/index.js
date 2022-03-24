@@ -7,14 +7,14 @@ import 'antd/dist/antd.css';
 
 // Declaring functions
 const {Meta} = Card;
-const n = 5;
+const n = 10;
 //const gun = Gun('https://gunjs.herokuapp.com/gun');
 
 // Displays n number of cards
 function displayCards() {
   return (
     [...Array(n)].map((elementInArray, index) => ( 
-      <div className={styles.grid}>
+      <div className={styles.grid} key={index}>
       <a href="https://www.google.com">
           <Card
             hoverable
