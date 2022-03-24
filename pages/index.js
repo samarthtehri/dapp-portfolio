@@ -11,7 +11,7 @@ const n = 10;
 //const gun = Gun('https://gunjs.herokuapp.com/gun');
 
 // Displays n number of cards
-function displayCards() {
+export function displayCards() {
   return (
     [...Array(n)].map((elementInArray, index) => ( 
       <div className={styles.grid} key={index}>
