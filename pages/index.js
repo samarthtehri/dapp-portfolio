@@ -3,16 +3,22 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { Button, Card, Breadcrumb } from 'antd';
 import 'antd/dist/antd.css';
+import Gun from 'gun/gun';
+
+
 
 // Declaring functions
 const {Meta} = Card;
-const n = 100;
+const n = 5;
+//const gun = Gun('https://gunjs.herokuapp.com/gun');
 
+
+
+// Displays n number of cards
 function displayCards() {
   return (
     [...Array(n)].map((elementInArray, index) => ( 
       <div className={styles.grid}>
-        
           <Card
             hoverable
             style={{ width: 240 }}
@@ -20,13 +26,13 @@ function displayCards() {
           >
           <Meta title="Cat picture" description='This cat is doing some actions from gun js'/>
           </Card>
-        
       </div>
       ) 
     )
   )
 }
 
+// Displays the frontend
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -51,9 +57,9 @@ export default function Home() {
         <Button type="primary"><a href="https://www.google.com">Apply Now!</a></Button>
       
 
-      <div className={styles.grid}>
-        {displayCards()}
-      </div>
+      <div className={styles.grid}>{displayCards()}</div>
+
+
 
       </main>
 
