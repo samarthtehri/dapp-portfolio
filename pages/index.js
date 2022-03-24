@@ -6,6 +6,26 @@ import 'antd/dist/antd.css';
 
 // Declaring functions
 const {Meta} = Card;
+const n = 100;
+
+function displayCards() {
+  return (
+    [...Array(n)].map((elementInArray, index) => ( 
+      <div className={styles.grid}>
+        
+          <Card
+            hoverable
+            style={{ width: 240 }}
+            cover={<img alt="example" src="https://www.randomkittengenerator.com/cats/rotator.php" />}
+          >
+          <Meta title="Cat picture" description='This cat is doing some actions from gun js'/>
+          </Card>
+        
+      </div>
+      ) 
+    )
+  )
+}
 
 export default function Home() {
   return (
@@ -26,93 +46,15 @@ export default function Home() {
           <br></br>
           Check out some of the portfolios down below! all stored on a decentralized blockchain!
           <br></br>
-          
         </p>
 
         <Button type="primary"><a href="https://www.google.com">Apply Now!</a></Button>
-        
-        <div className={styles.grid}>
-          <div className={styles.grid}>
-            <Card
-              hoverable
-              style={{ width: 240 }}
-              cover={<img alt="example" src="https://www.randomkittengenerator.com/cats/rotator.php" />}
-            >
-            <Meta title="Sleeping Cat" description="www.instagram.com" />
-            </Card>
-          </div>
+      
 
-          <div className={styles.grid}>
-            <Card
-              hoverable
-              style={{ width: 240 }}
-              cover={<img alt="example" src="https://www.kittenwar.com/c_images/2011/10/29/205258.2.jpg" />}
-            >
-            <Meta title="Fighting Cat" description="... Where is my fish?" />
-            </Card>
-          </div>
+      <div className={styles.grid}>
+        {displayCards()}
+      </div>
 
-          <div className={styles.grid}>
-            <Card
-              hoverable
-              style={{ width: 240 }}
-              cover={<img alt="example" src="https://www.randomkittengenerator.com/cats/rotator.php" />}
-            >
-            <Meta title="Spring Cat" description="Spring Semester at PSU" />
-            </Card>
-          </div>
-
-          <div className={styles.grid}>
-            <Card
-              hoverable
-              style={{ width: 240 }}
-              cover={<img alt="example" src="https://www.kittenwar.com/c_images/2017/07/12/221418.4.jpg" />}
-            >
-            <Meta title="Staring Cat" description="www.instagram.com" />
-            </Card>
-          </div>
-
-          <div className={styles.grid}>
-            <Card
-              hoverable
-              style={{ width: 240 }}
-              cover={<img alt="example" src="https://www.kittenwar.com/c_images/2005/08/14/28320.jpg" />}
-            >
-            <Meta title="Sleepy Cat" description="www.instagram.com" />
-            </Card>
-          </div>
-
-          <div className={styles.grid}>
-            <Card
-              hoverable
-              style={{ width: 240 }}
-              cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
-            >
-            <Meta title="Europe Street beat" description="www.instagram.com" />
-            </Card>
-          </div>
-
-          <div className={styles.grid}>
-            <Card
-              hoverable
-              style={{ width: 240 }}
-              cover={<img alt="example" src="https://www.kittenwar.com/c_images/2010/12/17/196925.1.jpg" />}
-            >
-            <Meta title="What" description="www.instagram.com" />
-            </Card>
-          </div>
-
-          <div className={styles.grid}>
-            <Card
-              hoverable
-              style={{ width: 240 }}
-              cover={<img alt="example" src="https://ih1.redbubble.net/image.2482844591.2502/st,small,507x507-pad,600x600,f8f8f8.u1.jpg" />}
-            >
-            <Meta title="Beluga Cat" description="www.instagram.com" />
-            </Card>
-          </div>
-        
-        </div>
       </main>
 
       <footer className={styles.footer}>
