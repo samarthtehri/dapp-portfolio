@@ -3,29 +3,27 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { Button, Card, Breadcrumb } from 'antd';
 import 'antd/dist/antd.css';
-import Gun from 'gun/gun';
-
-
+//import Gun from 'gun/gun';
 
 // Declaring functions
 const {Meta} = Card;
 const n = 5;
 //const gun = Gun('https://gunjs.herokuapp.com/gun');
 
-
-
 // Displays n number of cards
 function displayCards() {
   return (
     [...Array(n)].map((elementInArray, index) => ( 
       <div className={styles.grid}>
+      <a href="https://www.google.com">
           <Card
             hoverable
             style={{ width: 240 }}
             cover={<img alt="example" src="https://www.randomkittengenerator.com/cats/rotator.php" />}
           >
-          <Meta title="Cat picture" description='This cat is doing some actions from gun js'/>
+          <Meta title="Cats!" description='@ Username'/>
           </Card>
+      </a>
       </div>
       ) 
     )
@@ -55,11 +53,8 @@ export default function Home() {
         </p>
 
         <Button type="primary"><a href="https://www.google.com">Apply Now!</a></Button>
-      
 
       <div className={styles.grid}>{displayCards()}</div>
-
-
 
       </main>
 
@@ -79,32 +74,13 @@ export default function Home() {
   )
 }
 
-/*
-        <p className={styles.description}>
-          A decentralized portfolio sharing platform created by Blockchain@PSU organisation 
-          <br></br>
-          <Button type="primary"><a href="https://www.google.com">Apply Now!</a></Button>
-        </p>
+// project title
+// picture of project
+// author name
+// link to project
 
 
-        <a href="" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-        <a href="" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a href="" className={styles.card}>
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a href="" className={styles.card}>
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-*/
+// smartCar
+// car image
+// my name
+// gooogle.com
