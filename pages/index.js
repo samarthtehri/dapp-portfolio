@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css'
 import { Button, Card, Breadcrumb } from 'antd';
 import 'antd/dist/antd.css';
 //import Gun from 'gun/gun';
+import { Component } from 'react/cjs/react.production.min';
 
 // Declaring functions
 const {Meta} = Card;
